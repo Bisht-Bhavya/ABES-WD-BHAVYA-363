@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <h1 style="font-size: 40px;text-align: center;">Student Registration Form</h1>
+</head>
+<body>
+    <form>
+   <table>
+    <tr>
+        <td>Full name: </td>
+        <td><input type="text" name="fullname" required></td>
+    </tr>
+    <tr>
+        <td>Email: </td>
+        <td><input type="text" name="Email" required></td>
+    </tr>
+    <tr>
+        <td>Password</td>
+        <td><input type="password" name="password" required></td>
+    </tr>
+    <tr>
+        <td>Confirm password</td>
+        <td><input type="password" name="Confirm" required></td>
+    </tr>
+    <tr>
+        <tr>
+            <td>Gender: </td>
+            <td><input type="radio" name="Gender" value="male">Male</td>
+            <td><input type="radio" name="Gender" value="female">Female</td>
+        </tr>
+        <tr>
+            <td>Hobbies:</td>
+            <td><input type="checkbox" name="checkbox" value="Reading">Reading</td>
+            <td><input type="checkbox" name="checkbox" value="Coding">Coding</td>
+            <td><input type="checkbox" name="checkbox" value="Sports">Sports</td>
+        </tr>
+        <td>Course: </td>
+        <td>
+            <select name="course" style="font-size: 15px;">
+                <option>BCA</option>
+                <option>Btech</option>
+                <option>MCA</option>
+                <option>MBA</option>
+            </select>
+    </tr>
+    <tr>
+        <td>Address:</td>
+    <td><textarea name="address" rows="4" cols="30" style="resize:none;"></textarea></td>
+    </tr>
+   </table>
+    </form>
+    <h1><button>Submit</button></h1>
+    <h1><button>Reset</button></h1>
+</body>
+</html>
