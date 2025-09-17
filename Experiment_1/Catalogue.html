@@ -4,9 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catalogue</title>
+    <style>
+        table, th, td {
+            border: 2px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+            table{
+            width: 100%;
+            height: 100px;
+        }
+        th, td {
+            padding: 5px;
+            text-align:center;
+           
+
+        }
+        th {
+            text-align: left;
+        }
+        img{
+            width: 80px;
+            height: 70px;
+        }
+        button{
+            padding: 3px;
+            background-color: yellow;
+            border: solid black 2px;
+            cursor: pointer;
+             box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+</style>
 </head>
 <body>
-    <img style="width: 60px; height: 50px;"
-    src="https://png.pngtree.com/png-clipart/20240619/original/pngtree-open-book-logo-png-image_15366757.png" alt="">
+    <table>
+        <tr>
+        <td><img src="https://png.pngtree.com/png-clipart/20240619/original/pngtree-open-book-logo-png-image_15366757.png" alt="book1"></td>
+         <td>Book: Title 1 <br>Author: Author 1 <br>Publication: Year 1</td>
+         <td>100 rs</td>
+         <td><button>Add to Cart</button></td>
+        </tr>
+        <tr>
+            <td><img src="https://png.pngtree.com/png-clipart/20240619/original/pngtree-open-book-logo-png-image_15366757.png" alt="book2"></td>
+            <td>Book: Title 2 <br>Author: Author 2 <br>Publication: Year 2</td>
+            <td>200 rs</td>
+            <td><button>Add to Cart</button></td>
+        </tr>
+    </table>
 </body>
 </html>
