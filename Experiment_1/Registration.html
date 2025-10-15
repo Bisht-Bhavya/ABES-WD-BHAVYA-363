@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Form</title>
     <h1 style="font-size: 40px;text-align: center;">Student Registration Form</h1>
+    <style>
+       table,form{
+        padding: 0px;
+        margin-left: auto;
+        margin-right: auto;
+       }
+    </style>
 </head>
 <body>
     <form>
@@ -25,34 +32,36 @@
         <td>Confirm password</td>
         <td><input type="password" name="Confirm" required></td>
     </tr>
+
     <tr>
-        <tr>
+        <td>Phone no.: </td>
+        <td><input type="text" name="phone" required></td>
+    </tr>
+
+    <tr>
             <td>Gender: </td>
             <td><input type="radio" name="Gender" value="male">Male</td>
             <td><input type="radio" name="Gender" value="female">Female</td>
-        </tr>
-        <tr>
-            <td>Hobbies:</td>
-            <td><input type="checkbox" name="checkbox" value="Reading">Reading</td>
-            <td><input type="checkbox" name="checkbox" value="Coding">Coding</td>
-            <td><input type="checkbox" name="checkbox" value="Sports">Sports</td>
-        </tr>
-        <td>Course: </td>
-        <td>
-            <select name="course" style="font-size: 15px;">
-                <option>BCA</option>
-                <option>Btech</option>
-                <option>MCA</option>
-                <option>MBA</option>
-            </select>
     </tr>
+
     <tr>
-        <td>Address:</td>
-    <td><textarea name="address" rows="4" cols="30" style="resize:none;"></textarea></td>
+        <td>Birthday:</td>
+        <td><input type="date" name="birthday"></td>
     </tr>
-   </table>
-    </form>
-    <h1><button>Submit</button></h1>
-    <h1><button>Reset</button></h1>
+</table>
+<div style="display: flex; align-items: flex-start;gap: 10px;  justify-content: center;align-items: center;flex-wrap:wrap;margin: 2px;">
+        <p>Languages: </p>
+        <p> <input type="checkbox" name="language" value="English">English</p>
+        <p> <input type="checkbox" name="language" value="Hindi">Hindi</p>
+        <p> <input type="checkbox" name="language" value="Telugu">Telugu</p>
+        <p> <input type="checkbox" name="language" value="Tamil">Tamil</p>
+        <div style="width: 100%;height: 0px;padding: 0px;margin: 0px;"></div>
+        <p>Address:</p>
+        <p><textarea name="address" rows="4" cols="30" style="resize:none;"></textarea></p>
+        <div style="width: 100%;height: 0px;padding: 0px;margin: 0px;"></div>
+        <h1><button>Submit</button></h1>
+        <h1><button>Reset</button></h1>
+    </div>
+</form>
 </body>
 </html>
