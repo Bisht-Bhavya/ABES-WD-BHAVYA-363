@@ -4,47 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catalogue</title>
-    <style>
-        html, body {
-      margin: 0;
-      height: 100%;
-      width: 100%;
-    }
-
-        table, th, td {
-            border: 2px solid black;
-            border-collapse: collapse;
-            text-align: center;
-        }
-            table{
-            width: 100%;
-            height: 100%;
-        }
-        th, td {
-            padding: 5px;
-            text-align:center;
-        }
-        th {
-            text-align: left;
-        }
-        img{
-            width: 80px;
-            height: 70px;
-        }
-        button{
-            padding: 3px;
-            background-color: yellow;
-            border: solid black 2px;
-            cursor: pointer;
-             box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-        }
-        button:hover{
-            background-color: orange;
-        transform: scale(1.1);
-        transform-style:ease-in-out;
-        transition-duration: 0.3s;
-        }
-</style>
+    <link rel="stylesheet" href="pages_deco.css">
 </head>
 <body>
     <table>
@@ -53,28 +13,28 @@
         <td><img src="https://png.pngtree.com/png-clipart/20240619/original/pngtree-open-book-logo-png-image_15366757.png" alt="book1"></td>
          <td>Book: Title 1 <br>Author: Author 1 <br>Publication: Year 1</td>
          <td>&#8377; 100</td>
-         <td><button onclick="incrementCounter()">Add to Cart</button></td>
+         <td><button id="add">Add to Cart</button></td>
         </tr>
 
         <tr>
             <td><img src="https://png.pngtree.com/png-clipart/20240619/original/pngtree-open-book-logo-png-image_15366757.png" alt="book2"></td>
             <td>Book: Title 2 <br>Author: Author 2 <br>Publication: Year 2</td>
             <td>&#8377; 200</td>
-            <td><button onclick="addToCart('book2','Book: Title 2',200)">Add to Cart</button></td>
+            <td><button id="add">Add to Cart</button></td>
         </tr>
 
             <tr>
                 <td><img src="https://png.pngtree.com/png-clipart/20240619/original/pngtree-open-book-logo-png-image_15366757.png" alt="book3"></td>
                 <td>Book: Title 3 <br>Author: Author 3 <br>Publication: Year 3</td>
                 <td>&#8377; 300</td>
-                <td><button onclick="addToCart('book3','Book: Title 3',300)">Add to Cart</button></td>
+                <td><button id="add">Add to Cart</button></td>
             </tr>
 
             <tr>
                 <td><img src="https://png.pngtree.com/png-clipart/20240619/original/pngtree-open-book-logo-png-image_15366757.png" alt="book4"></td>
                 <td>Book: Title 4 <br>Author: Author 4 <br>Publication: Year 4</td>
                 <td>&#8377; 400</td>
-                <td><button onclick="addToCart('book4','Book: Title 4',400)">Add to Cart</button></td>
+                <td><button id="add">Add to Cart</button></td>
             </tr>
 
     </table>

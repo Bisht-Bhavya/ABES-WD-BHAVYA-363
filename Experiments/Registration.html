@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Form</title>
-    <h1 style="font-size: 40px;text-align: center;">Student Registration Form</h1>
     <style>
-       table,form{
+       table,form{ 
         padding: 0px;
         margin-left: auto;
         margin-right: auto;
@@ -14,34 +13,35 @@
     </style>
 </head>
 <body>
-    <form>
+    <h1 style="font-size: 40px;text-align: center;">Student Registration Form</h1>
+    <form id="MyForm" name="myForm" action="" method="get">
    <table>
     <tr>
         <td>Full name: </td>
-        <td><input type="text" name="fullname" required></td>
+        <td><input type="text" id="fullname" name="fullname" ></td>
     </tr>
     <tr>
         <td>Email: </td>
-        <td><input type="text" name="Email" required></td>
+        <td><input type="text" id="email" name="Email" ></td>
     </tr>
     <tr>
         <td>Password</td>
-        <td><input type="password" name="password" required></td>
+        <td><input type="password" id="password" name="password" ></td>
     </tr>
     <tr>
         <td>Confirm password</td>
-        <td><input type="password" name="Confirm" required></td>
+        <td><input type="password" id="Confirm" name="Confirm" ></td>
     </tr>
 
     <tr>
         <td>Phone no.: </td>
-        <td><input type="text" name="phone" required></td>
+        <td><input type="text" id="phone" name="phone" ></td>
     </tr>
 
     <tr>
             <td>Gender: </td>
-            <td><input type="radio" name="Gender" value="male">Male</td>
-            <td><input type="radio" name="Gender" value="female">Female</td>
+            <td><input type="radio" id="gender_male" name="Gender" value="male">Male</td>
+            <td><input type="radio" id="gender_female" name="Gender" value="female">Female</td>
     </tr>
 
     <tr>
@@ -57,11 +57,14 @@
         <p> <input type="checkbox" name="language" value="Tamil">Tamil</p>
         <div style="width: 100%;height: 0px;padding: 0px;margin: 0px;"></div>
         <p>Address:</p>
-        <p><textarea name="address" rows="4" cols="30" style="resize:none;"></textarea></p>
+        <p><textarea id="address" name="address" rows="4" cols="30" style="resize:none;"></textarea></p>
         <div style="width: 100%;height: 0px;padding: 0px;margin: 0px;"></div>
-        <h1><button>Submit</button></h1>
-        <h1><button>Reset</button></h1>
+        <div id="error" style="color: red; width:100%; text-align:center;"></div>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
     </div>
 </form>
+
+    <script src="validate.js"></script>
 </body>
 </html>
